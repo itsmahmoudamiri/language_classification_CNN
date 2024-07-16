@@ -49,7 +49,7 @@ The dataset consists of audio files in German, Farsi, and English. These audio f
 
 The model is evaluated on a test set, and the accuracy and confusion matrix are displayed. For example:
 
-- Test accuracy: 0.89
+- Test accuracy: 0.87
 
 The confusion matrix is visualized using a heatmap.
 
