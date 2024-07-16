@@ -2,18 +2,18 @@
 
 ## Description
 
-This project demonstrates how to classify audio segments into different languages (Arabic, Farsi, and English) using a Convolutional Neural Network (CNN) based on the VGG16 architecture. The workflow involves converting audio segments into frequency spectrum images and training a neural network to perform the classification.
+This project demonstrates how to classify audio segments into different languages (German, Farsi, and English) using a Convolutional Neural Network (CNN) based on the VGG16 architecture. The workflow involves converting audio segments into Mel-Spectrogram images and training a neural network to perform the classification.
 
 ## Project Overview
 
-The goal of this project is to classify 1-second audio segments into one of three languages: Arabic, Farsi, and English. The process involves the following steps:
+The goal of this project is to classify 1-second audio segments into one of three languages: German, Farsi, and English. The process involves the following steps:
 
-1. Convert audio segments into frequency spectrum images using Fast Fourier Transform (FFT).
+1. Convert audio segments into frequency spectrum images using Mel-Spectrogram.
 2. Use these images to train a VGG16-based Convolutional Neural Network (CNN) to classify the languages.
 
 ## Dataset
 
-The dataset consists of audio files in Arabic, Farsi, and English. These audio files are split into 1-second segments, and each segment is converted into a frequency spectrum image.
+The dataset consists of audio files in German, Farsi, and English. These audio files are split into 1-second segments, and each segment is converted into a Mel-Spectrogram image.
 
 ## Pre-requisites
 
@@ -31,18 +31,18 @@ The dataset consists of audio files in Arabic, Farsi, and English. These audio f
 
 ### Audio Processing
 
-1. Convert audio segments into frequency spectrum images:
+1. Convert audio segments into Mel-Spectrogram images:
 
-- Adjust the path and output_path variables in audio_processing.ipynb to point to your audio files and desired output directory.
-- Run the script to process the audio files and save the images: ./audio_processing.ipynb
+- Adjust the path and output_path variables in AudioProcessor.ipynb to point to your audio files and desired output directory.
+- Run the script to process the audio files and save the images: ./AudioProcessor.ipynb
   
 
 ### Model Training
 
 2. Train the VGG16-based CNN model:
 
-- Ensure your processed images are in the images/ directory.
-- Run the training script to train the model: ./training.ipynb
+- Ensure your processed images are in the ./processed_data directory.
+- Run the training script to train the model: ./ImageClassifier.ipynb
   
 
 ## Results
